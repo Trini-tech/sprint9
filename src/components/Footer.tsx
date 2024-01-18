@@ -2,7 +2,7 @@ import ciberLogo from '/ciberlogo.svg';
 
 export default function Footer() {
   return (
-    <div className="justify-center items-center self-stretch bg-gray-50 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5">
+    <div className="justify-center items-center self-stretch bg-slate-100 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5">
       <div className="flex w-full flex-col items-stretch mt-6 max-md:max-w-full">
         <div className="justify-between items-center flex gap-0 max-md:max-w-full max-md:flex-wrap">
           <div className="text-blue-950 text-2xl font-bold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">

@@ -1,3 +1,5 @@
+import ButtonArrow from '../components/atoms/ButtonArrow';
+
 export default function Homepage() {
   return (
     <div className="items-start bg-white flex flex-col">
@@ -15,11 +17,9 @@ export default function Homepage() {
             <div className="flex flex-col items-stretch w-[42%] ml-5 max-md:w-full max-md:ml-0">
               <div className="justify-center items-center self-stretch flex flex-col my-auto max-md:max-w-full max-md:mt-10">
                 <div className="text-slate-400 text-3xl font-medium leading-10 max-md:max-w-full">Cibernàrium | Barcelona Activa</div>
-                <div className="self-stretch text-pink-600 text-center text-5xl font-bold leading-[56px] mt-1.5 max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">Formació tecnològica a la teva mida</div>
+                <h1 className="self-stretch text-pink-600 text-center text-5xl font-bold leading-[56px] mt-1.5 max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">Formació tecnològica a la teva mida</h1>
                 <div className="self-stretch text-blue-950 text-center text-base leading-7 mt-1.5 max-md:max-w-full">Ja siguis principiant en el món digital o un professional amb anys d'experiència, tenim cursos dissenyats per a tots els nivells, amb opcions tant presencials com online.</div>
-                <div className="justify-center bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)] flex gap-2.5 mt-7 px-4 py-2.5 rounded-lg items-start">
-                  <div className="text-white text-sm font-bold grow whitespace-nowrap">Explora els cursos</div> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7675ca4cfaa958677034b3598636a956c827437e755f30fe13c69224ff6362b4?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full" />
-                </div>
+                <ButtonArrow>Explora els cursos</ButtonArrow>
               </div>
             </div>
             <div className="flex flex-col items-stretch w-[28%] ml-5 max-md:w-full max-md:ml-0">
@@ -35,7 +35,7 @@ export default function Homepage() {
       {/* Definition and characteristics*/}
       <div className="justify-center items-center bg-gray-50 self-stretch flex w-full flex-col px-20 py-12 max-md:max-w-full max-md:px-5">
         <div className="text-slate-600 text-base leading-7 w-[1176px] mt-6 max-md:max-w-full">
-          <span className="text-pink-600">Cibernàrium</span>
+          <span className="text-slate-600">Cibernàrium és una xarxa de centres de Barcelona on s’imparteixen un ampli ventall de cursos, tallers i seminars que aborden temes com el desenvolupament de software, la programació, la ciberseguretat, el màrqueting digital i la intel·ligència artificial entre altres. Aquests cursos estan dissenyats per ajudar a les persones a adquirir habilitats digitals i mantenir-se actualitzades en un entorn tecnològic en constant evolució.</span>
         </div>
         <div className="justify-between w-full max-w-[1176px] mt-12 mb-6 max-md:max-w-full max-md:mt-10">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -83,6 +83,7 @@ export default function Homepage() {
         </div>
       </div>
       {/* Education formats */}
+      {/* -- Formació bàsica*/}
       <div className="justify-center items-center self-stretch bg-white flex w-full flex-col mt-6 px-16 py-12 max-md:max-w-full max-md:px-5">
         <div className="w-[825px] max-w-full my-11 max-md:my-10">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -94,26 +95,25 @@ export default function Homepage() {
               />
             </div>
             <div className="flex flex-col items-stretch w-[47%] ml-5 max-md:w-full max-md:ml-0">
-              <div className="items-stretch flex flex-col my-auto max-md:mt-10">
-                <div className="text-blue-950 text-4xl font-bold leading-10">Formació bàsica</div> <div className="text-gray-500 text-lg leading-8 mt-3">Aprèn a fer servir el correu electrònic, aplicacions del mòvil, iniciar-se a internet o demanar el certificat digital.</div>
-                <div className="justify-between bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)] flex gap-2.5 mt-4 pl-8 pr-14 py-2.5 rounded-lg items-start max-md:px-5">
-                  <div className="text-white text-sm font-bold">Veure els cursos</div> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b65a37fd1b7531cbc222037b497271a1b74c009d912c580bf15b7e6d3bc568f?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full" />
-                </div>
+              <div className="justify-center items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
+                <div className="self-stretch text-blue-950 text-4xl font-bold leading-10 max-md:max-w-full">Formació bàsica</div>
+                <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Aprèn a fer servir el correu electrònic, aplicacions del mòvil, iniciar-se a internet o demanar el certificat digital.</div>
+                <ButtonArrow>Veure els cursos</ButtonArrow>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* -- Formació especialitzada*/}
       <div className="justify-center items-center self-stretch bg-white flex w-full flex-col pt-6 pb-12 px-16 max-md:max-w-full max-md:px-5">
-        <div className="justify-center items-center flex w-full max-w-[1176px] flex-col mb-14 px-16 max-md:max-w-full max-md:mb-10 max-md:px-5">
+        <div className="justify-between w-full max-w-[1176px] mb-11 px-20 max-md:max-w-full max-md:mb-10 max-md:px-5">
           <div className="w-[960px] max-w-full">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch w-[49%] max-md:w-full max-md:ml-0">
-                <div className="items-stretch flex flex-col my-auto max-md:mt-10">
-                  <div className="text-blue-950 text-4xl font-bold leading-10">Formació especialitzada</div> <div className="text-gray-500 text-lg leading-8 mt-3">Formació d’aplicacions específiques com Excel, Illustrator, Canva, etc.</div>
-                  <div className="justify-between bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)] flex gap-2.5 mt-4 pl-8 pr-14 py-2.5 rounded-lg items-start max-md:px-5">
-                    <div className="text-white text-sm font-bold">Veure els cursos</div> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7f284879f524dc5a3de0aaf1b8066ff66bc269ba1e0b617e24e47fa77ff0819?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full" />
-                  </div>
+              <div className="flex flex-col items-stretch w-[47%] ml-5 max-md:w-full max-md:ml-0">
+                <div className="justify-center items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
+                  <div className="self-stretch text-blue-950 text-4xl font-bold leading-10 max-md:max-w-full">Formació especialitzada</div>
+                  <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Formació d'aplicacions específiques com Excel, Illustrator, Canva, etc.</div>
+                  <ButtonArrow>Veure els cursos</ButtonArrow>
                 </div>
               </div>
               <div className="flex flex-col items-stretch w-[51%] ml-5 max-md:w-full max-md:ml-0">
@@ -127,6 +127,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      {/* -- Formació IT ACademy*/}
       <div className="justify-center items-center self-stretch bg-white flex w-full flex-col pb-12 px-16 max-md:max-w-full max-md:px-5">
         <div className="justify-between w-full max-w-[1176px] mb-11 px-20 max-md:max-w-full max-md:mb-10 max-md:px-5">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -139,11 +140,10 @@ export default function Homepage() {
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
               <div className="justify-center items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
-                <div className="self-stretch text-blue-950 text-4xl font-bold leading-10 max-md:max-w-full">IT Academy</div> <div className="self-stretch text-pink-600 text-2xl leading-10 mt-3 max-md:max-w-full">Formació especialitzada de llarga duració</div> <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Per formar a aquelles persones que vulguin fer un procés de reconversió laboral cap al sector TIC o bé reciclar-se dins d'aquest sector.</div>
-                <div className="justify-center bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)] flex gap-2.5 mt-3 px-4 py-2.5 rounded-lg self-start items-start">
-                  <div className="text-white text-sm font-bold grow whitespace-nowrap">Veure els cursos</div>
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a89e8e902feb60ec3ca1f254420b6945e4042e67005e2a96da8acfeaf3f8c268?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-5 overflow-hidden self-stretch shrink-0 max-w-full" />
-                </div>
+                <div className="self-stretch text-blue-950 text-4xl font-bold leading-10 max-md:max-w-full">IT Academy</div>
+                <div className="self-stretch text-pink-600 text-2xl leading-10 mt-3 max-md:max-w-full">Formació especialitzada de llarga duració</div>
+                <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Per formar a aquelles persones que vulguin fer un procés de reconversió laboral cap al sector TIC o bé reciclar-se dins d'aquest sector.</div>
+                <ButtonArrow>Veure els cursos</ButtonArrow>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function Homepage() {
         </div>
       </div>
       {/* Other courses */}
-      <div className="items-center self-stretch flex justify-between gap-5 px-20 py-12 max-md:max-w-full max-md:flex-wrap max-md:px-5">
+      <div className="items-center self-stretch flex justify-between gap-5 px-28 py-12 max-md:max-w-full max-md:flex-wrap max-md:px-5">
         <div className="items-stretch flex grow basis-[0%] flex-col my-auto max-md:max-w-full">
           <div className="text-slate-950 text-4xl font-bold leading-10 max-md:max-w-full">També et pot interessar</div>
           <div className="mt-12 max-md:max-w-full max-md:mt-10">

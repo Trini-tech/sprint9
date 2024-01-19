@@ -1,6 +1,6 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Homepage from './pages/Homepage';
+import Homepage from './pages/Homepage/Homepage';
 import Centres from './pages/Centres';
 import Cursos from './pages/Cursos';
 

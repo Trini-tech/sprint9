@@ -1,3 +1,4 @@
+import { EnvelopeIcon } from '@heroicons/react/20/solid';
 import ciberLogo from '/ciberlogo.svg';
 
 export default function Footer() {
@@ -6,11 +7,27 @@ export default function Footer() {
       <div className="flex w-full flex-col items-stretch mt-6 max-md:max-w-full">
         <div className="justify-between items-center flex gap-0 max-md:max-w-full max-md:flex-wrap">
           <div className="text-blue-950 text-2xl font-bold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">
-            Segueix la nostra newsletter <br />i estigues al dia de l’oferta de cursos disponibles
+            Segueix la nostra newsletter <br />i estigues al dia de l'oferta de cursos disponibles
           </div>
-          <div className="justify-center border border-[color:var(--Gris200,#D7D7D7)] bg-white self-stretch flex grow basis-[0%] flex-col pl-16 pr-4 py-3 rounded-xl border-solid items-end max-md:max-w-full max-md:pl-5">
-            <div className="text-white text-center text-base font-bold leading-7 whitespace-nowrap justify-center items-stretch bg-pink-600 px-7 py-2 rounded-lg max-md:px-5">Subscriu-m’hi</div>
-          </div>
+
+          {/* Newsletter form */}
+
+          <form action="">
+            <div className="flex items-center mx-auto mb-3 ">
+              <div className="relative w-fit">
+                <label className="hidden mb-2 text-sm font-medium text-gray-900">Email address</label>
+                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <EnvelopeIcon className="w-5 text-gray-500" />
+                </div>
+                <input className="block py-3 pl-10 pr-40 self-start text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:border-slate-600 focus:outline-none" placeholder="Enter your email" type="email" id="email" />
+              </div>
+              <div className="relative w-fit">
+                <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg cursor-pointer bg-pink-600 border border-gray-300 sm:rounded-none sm:rounded-r-lg   ">
+                  Subscriu-m'hi
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
         <div className="justify-between items-stretch flex w-full gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
           <div className="items-start flex flex-col">

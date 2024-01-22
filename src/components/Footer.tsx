@@ -11,23 +11,19 @@ export default function Footer() {
           </div>
 
           {/* Newsletter form */}
-
-          <form action="">
-            <div className="flex items-center mx-auto mb-3 ">
-              <div className="relative w-fit">
-                <label className="hidden mb-2 text-sm font-medium text-gray-900">Email address</label>
+          <div className="w-[25rem] mx-auto">
+            <form className="flex items-center">
+              <div className="relative w-full">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <EnvelopeIcon className="w-5 text-gray-500" />
+                  <EnvelopeIcon className="justify-center text-gray-500 aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
                 </div>
-                <input className="block py-3 pl-10 pr-40 self-start text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:border-slate-600 focus:outline-none" placeholder="Enter your email" type="email" id="email" />
+                <input type="email" id="email" className="flex text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:border-slate-600 focus:outline-none  appearance-none  w-full text-sm py-3 px-4 pl-10 p-2.5" placeholder="Introdueix el teu correu" required />
               </div>
-              <div className="relative w-fit">
-                <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg cursor-pointer bg-pink-600 border border-gray-300 sm:rounded-none sm:rounded-r-lg   ">
-                  Subscriu-m'hi
-                </button>
-              </div>
-            </div>
-          </form>
+              <button type="submit" className="flex py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg cursor-pointer bg-pink-600 border border-gray-300 sm:rounded-none sm:rounded-r-lg   ">
+                Subscriu-m'hi
+              </button>
+            </form>
+          </div>
         </div>
         <div className="justify-between items-stretch flex w-full gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
           <div className="items-start flex flex-col">
@@ -41,7 +37,8 @@ export default function Footer() {
             />
             <div className="text-slate-600 text-sm self-stretch mt-7">Cibernàrium és una xarxa de centres de Barcelona on s’imparteix formació tecnològica de tots els nivells.</div>
             <div className="items-stretch self-stretch flex gap-4 mt-8 pr-20 max-md:pr-5">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a93c4e7c009fd3733cbd059bcdb63f9765115027d50b88b6cfaa0d77420b3b61?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" /> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/653ee5e5b4e688a1d5b8757b02c3f0f0a8d1dfd348c115c30e0cacca01725f59?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a93c4e7c009fd3733cbd059bcdb63f9765115027d50b88b6cfaa0d77420b3b61?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/653ee5e5b4e688a1d5b8757b02c3f0f0a8d1dfd348c115c30e0cacca01725f59?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
               <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ac003f4a3d677c6cd943ba5043cd2c4b4058870cbde4c08cb8af6e3b76b0e43?apiKey=f46cbfe603664861b277383241817b92&" className="aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
             </div>
           </div>
@@ -74,7 +71,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 shrink-0 h-px mt-16 max-md:max-w-full max-md:mt-10" /> <div className="text-gray-700 text-sm font-medium leading-5 mt-10 max-md:max-w-full">© 2024 Barcelona Activa</div>
+        <div className="bg-gray-200 shrink-0 h-px mt-16 max-md:max-w-full max-md:mt-10" />
+        <div className="text-gray-700 text-sm font-medium leading-5 mt-10 max-md:max-w-full">© 2024 Barcelona Activa</div>
       </div>
     </div>
   );

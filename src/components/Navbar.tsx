@@ -34,7 +34,7 @@ export default function Navbar(): JSX.Element {
               </div>
               {/* Open menu with logo, pages and search bar */}
               <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-                <div className="ml-12 justify-center self-center my-auto">
+                <div className="ml-12 lg:ml-0 justify-center self-center my-auto">
                   <Link to="/">
                     <img src={ciberLogo} className="logo" alt="Cibernarium logo" />
                   </Link>

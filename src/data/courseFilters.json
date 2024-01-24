@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Categoria",
+    "types": ["Desenvolupament web", "UX/UI"]
+  },
+  {
+    "title": "Modalitat",
+    "types": ["Presencial", "Híbrid", "Online - en directe", "Online - en vídeo"]
+  },
+  {
+    "title": "Nivell",
+    "types": ["Bàsic", "Especialitzat", "IT-Academy"]
+  }
+]

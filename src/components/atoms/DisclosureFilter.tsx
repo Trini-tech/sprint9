@@ -1,20 +1,42 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { Filter } from '../../types/types';
 
-export default function DisclosureFilter({ title, filters }: { title: string; filters: string }) {
+interface DisclosureFilterCheckboxProps {
+  courseFilters: Filter[];
+}
+
+export default function xDisclosureFilterCheckbox({ courseFilters }: DisclosureFilterCheckboxProps) {
   return (
-    <div className="bg-white flex flex-wrap gap-2 pl-8 pr-12 py-5 rounded-xl items-start">
-      <Disclosure>
-        {({ open }) => (
-          <>
-            <Disclosure.Button className="flex w-full items-center">
-              <ChevronDownIcon className={`${open ? 'rotate-180 transform' : ''} h-[40px] w-[40px] mr-2 p-2 rounded-lg bg-pink-100 text-pink-600`} />
-              <span className="flex w-full pl-2 justify-start rounded-lg text-left text-base font-bold text-zinc-800">{title}</span>
-            </Disclosure.Button>
-            <Disclosure.Panel className=" pb-2 pt-4 pl-14 text-base text-zinc-800 leading-7">{filters}</Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-    </div>
+    <>
+      {courseFilters.map((courseFilter) => (
+        <div key={courseFilter.title} className="border border-solid border-gray-200 flex w-full flex-col mt-6 pt-4 pb-4 px-7 rounded-lg max-md:px-5">
+          <Disclosure>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="justify-between items-stretch flex gap-5">
+                  <span className="flex w-full justify-start rounded-lg text-left text-base font-bold text-blue-950 ">{courseFilter.title}</span>
+                  <ChevronDownIcon className={`${open ? 'rotate-180 transform' : ''} h-[20px] w-[20px] rounded-lg text-blue-950 font-bold`} />
+                </Disclosure.Button>
+                <Disclosure.Panel className="pb-2 text-base text-zinc-800 leading-7">
+                  <ul className="w-48 text-sm">
+                    {courseFilter.types.map((type) => (
+                      <li key={type} className="w-full">
+                        <span className="items-stretch content-center flex-wrap flex gap-2.5 mt-6">
+                          <input id={`${type}-checkbox`} type="checkbox" value="" className="w-5 h-5 accent-pink-600" />
+                          <label htmlFor={`${type}-checkbox`} className="text-blue-950 text-sm leading-5">
+                            {type}
+                          </label>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+        </div>
+      ))}
+    </>
   );
 }

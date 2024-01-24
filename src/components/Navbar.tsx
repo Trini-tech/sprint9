@@ -53,7 +53,7 @@ export default function Navbar(): JSX.Element {
                           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                             <MagnifyingGlassIcon className="justify-center text-gray-500 aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
                           </div>
-                          <input type="text" id="search" className="bg-slate-100 text-slate-600 border border-gray-100 appearance-none block w-full text-sm rounded-lg py-3 px-4 focus:border-slate-600 focus:outline-none  pl-10 p-2.5" placeholder="Cercador de cursos" required />
+                          <input type="text" id="search" className="bg-slate-100 text-slate-600 border border-gray-100 appearance-none block w-full text-sm rounded-lg py-3 px-4 focus:bg-gray-50 focus:border-slate-400 focus:outline-none  pl-10 p-2.5" placeholder="Cercador de cursos" required />
                         </div>
                       </form>
                     </div>
@@ -65,7 +65,7 @@ export default function Navbar(): JSX.Element {
               <div className="hidden md:flex absolute inset-y-0 right-0 items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="items-center self-center flex justify-between gap-5">
                   <button className="justify-center self-center text-slate-600 text-sm font-medium my-auto">Accedeix</button>
-                  <Button>Registre</Button>
+                  <Button styles="bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)]">Registre</Button>
                 </div>
                 {/* -- Language dropdown */}
                 <Menu as="div" className="relative ml-3">

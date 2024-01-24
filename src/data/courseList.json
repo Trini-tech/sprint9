@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "location": "Cibernàrium - Nou Barris",
+    "title": "Iniciació als fitxers digitals i a l'emmagatzematge",
+    "description": "Tens un telèfon intel·ligent o una tauleta i vols treure'n el màxim profit. Aprendràs com utilitzar-los i descobriràs les opcions bàsiques que t'ofereixen per facilitar el teu dia a dia. Treballaràs i aprendràs amb el teu dispositiu, no te l’oblidis.",
+    "level": "Nivell Bàsic",
+    "schedule": "Del dt. 16/01/24 al dt. 23/01/24 (11:30-13:30h)",
+    "sessions": "3",
+    "availability": false,
+    "img": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecb3434c8d151029135520835a31453ff361223aca659cd498c0cb57fb67237e?apiKey=f46cbfe603664861b277383241817b92&"
+  },
+  {
+    "id": 2,
+    "location": "Cibernàrium - Nou Barris",
+    "title": "Iniciació als fitxers digitals i a l'emmagatzematge",
+    "description": "Tens un telèfon intel·ligent o una tauleta i vols treure'n el màxim profit. Aprendràs com utilitzar-los i descobriràs les opcions bàsiques que t'ofereixen per facilitar el teu dia a dia. Treballaràs i aprendràs amb el teu dispositiu, no te l’oblidis.",
+    "level": "Nivell Bàsic",
+    "schedule": "Del dt. 16/01/24 al dt. 23/01/24 (11:30-13:30h)",
+    "sessions": "3",
+    "availability": true,
+    "img": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecb3434c8d151029135520835a31453ff361223aca659cd498c0cb57fb67237e?apiKey=f46cbfe603664861b277383241817b92&"
+  },
+  {
+    "id": 3,
+    "location": "Cibernàrium - Nou Barris",
+    "title": "Iniciació als fitxers digitals i a l'emmagatzematge",
+    "description": "Tens un telèfon intel·ligent o una tauleta i vols treure'n el màxim profit. Aprendràs com utilitzar-los i descobriràs les opcions bàsiques que t'ofereixen per facilitar el teu dia a dia. Treballaràs i aprendràs amb el teu dispositiu, no te l’oblidis.",
+    "level": "Nivell Bàsic",
+    "schedule": "Del dt. 16/01/24 al dt. 23/01/24 (11:30-13:30h)",
+    "sessions": "3",
+    "availability": true,
+    "img": "https://cdn.builder.io/api/v1/image/assets/TEMP/ecb3434c8d151029135520835a31453ff361223aca659cd498c0cb57fb67237e?apiKey=f46cbfe603664861b277383241817b92&"
+  }
+]

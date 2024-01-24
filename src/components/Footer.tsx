@@ -5,13 +5,10 @@ export default function Footer() {
   return (
     <div className="justify-center items-center self-stretch bg-slate-100 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5">
       <div className="flex w-full flex-col items-stretch mt-6 max-md:max-w-full">
-        <div className="justify-between items-center flex gap-0 max-md:max-w-full max-md:flex-wrap">
-          <div className="text-blue-950 text-2xl font-bold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">
-            Segueix la nostra newsletter <br />i estigues al dia de l'oferta de cursos disponibles
-          </div>
-
-          {/* Newsletter form */}
-          <div className="w-[25rem] mx-auto">
+        {/* Newsletter form */}
+        <div className="justify-between grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+          <div className="text-blue-950 text-2xl font-bold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">Segueix la nostra newsletter i estigues al dia de l'oferta de cursos disponibles</div>
+          <div className="w-full justify-end ">
             <form className="flex items-center">
               <div className="relative w-full">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -19,7 +16,7 @@ export default function Footer() {
                 </div>
                 <input type="email" id="email" className="flex text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:border-slate-600 focus:outline-none  appearance-none  w-full text-sm py-3 px-4 pl-10 p-2.5" placeholder="Introdueix el teu correu" required />
               </div>
-              <button type="submit" className="flex py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg cursor-pointer bg-pink-600 border border-gray-300 sm:rounded-none sm:rounded-r-lg   ">
+              <button type="submit" className=" w-2/4 justify-stretch py-3 px-5  text-sm font-medium text-center text-white cursor-pointer bg-pink-600 border border-gray-300 rounded-none rounded-r-lg   ">
                 Subscriu-m'hi
               </button>
             </form>
@@ -47,13 +44,13 @@ export default function Footer() {
               <div className="flex flex-col items-stretch w-[26%] max-md:w-full max-md:ml-0">
                 <div className="items-stretch flex grow flex-col max-md:mt-10">
                   <div className="text-blue-950 text-sm font-bold leading-5 whitespace-nowrap">Cibernàrium</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Cursos</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Centres</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Instructors</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">FAQ</div>
-                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Normes d’inscripció</div>
+                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Normes d'inscripció</div>
                 </div>
               </div>
               <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
                 <div className="items-stretch flex grow flex-col max-md:mt-10">
                   <div className="text-blue-950 text-sm font-bold leading-5 whitespace-nowrap">Termes i condicions</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Avís legal</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Privacitat</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Configuració de cookies</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Sitemap</div>
-                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Declaració d’accessibilitat</div>
+                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Declaració d'accessibilitat</div>
                 </div>
               </div>
               <div className="flex flex-col items-stretch w-2/5 ml-5 max-md:w-full max-md:ml-0">

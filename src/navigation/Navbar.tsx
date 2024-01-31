@@ -1,7 +1,7 @@
 import ciberLogo from '/ciberlogo.svg';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Link } from 'react-router-dom';
-import Button from './atoms/Button';
+import Button from '../components/atoms/Button';
 
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';

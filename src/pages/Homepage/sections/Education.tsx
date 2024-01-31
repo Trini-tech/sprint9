@@ -1,4 +1,5 @@
 import ButtonArrow from '../../../components/atoms/ButtonArrow';
+import { Link } from 'react-router-dom';
 
 export default function Education() {
   return (
@@ -18,7 +19,9 @@ export default function Education() {
               <div className="justify-center items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
                 <h3 className="self-stretch text-blue-950 leading-10 max-md:max-w-full">Formació bàsica</h3>
                 <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Aprèn a fer servir el correu electrònic, aplicacions del mòvil, iniciar-se a internet o demanar el certificat digital.</div>
-                <ButtonArrow>Veure els cursos</ButtonArrow>
+                <Link to="/cursos">
+                  <ButtonArrow>Veure els cursos</ButtonArrow>
+                </Link>
               </div>
             </div>
           </div>
@@ -33,7 +36,9 @@ export default function Education() {
                 <div className="justify-center items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
                   <h3 className="self-stretch text-blue-950 leading-10 max-md:max-w-full">Formació especialitzada</h3>
                   <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Formació d'aplicacions específiques com Excel, Illustrator, Canva, etc.</div>
-                  <ButtonArrow>Veure els cursos</ButtonArrow>
+                  <Link to="/cursos">
+                    <ButtonArrow>Veure els cursos</ButtonArrow>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col items-stretch w-[51%] ml-5 max-md:w-full max-md:ml-0">
@@ -63,7 +68,9 @@ export default function Education() {
                 <h3 className="self-stretch text-blue-950 leading-10 max-md:max-w-full">IT Academy</h3>
                 <div className="self-stretch text-pink-600 text-2xl leading-10 mt-3 max-md:max-w-full">Formació especialitzada de llarga duració</div>
                 <div className="self-stretch text-gray-500 text-lg leading-8 mt-3 max-md:max-w-full">Per formar a aquelles persones que vulguin fer un procés de reconversió laboral cap al sector TIC o bé reciclar-se dins d'aquest sector.</div>
-                <ButtonArrow>Veure els cursos</ButtonArrow>
+                <Link to="/cursos">
+                  <ButtonArrow>Veure els cursos</ButtonArrow>
+                </Link>
               </div>
             </div>
           </div>

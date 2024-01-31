@@ -1,4 +1,5 @@
 import ButtonArrow from '../../../components/atoms/ButtonArrow';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -17,7 +18,9 @@ export default function HeroSection() {
               <h3 className="self-stretch text-slate-400 text-center font-medium leading-10 max-md:max-w-full">Cibernàrium | Barcelona Activa</h3>
               <h1 className="self-stretch text-pink-600 text-center mt-1.5 max-md:max-w-full max-md:leading-[52px]">Formació tecnològica a la teva mida</h1>
               <p className="self-stretch text-blue-950 text-center leading-7 my-2 max-md:max-w-full">Ja siguis principiant en el món digital o un professional amb anys d'experiència, tenim cursos dissenyats per a tots els nivells, amb opcions tant presencials com online.</p>
-              <ButtonArrow>Explora els cursos</ButtonArrow>
+              <Link to="/cursos">
+                <ButtonArrow>Explora els cursos</ButtonArrow>
+              </Link>
             </div>
           </div>
           <div className="hidden md:flex order-3 flex-col items-stretch w-[28%] ml-5 max-md:w-full max-md:ml-0">

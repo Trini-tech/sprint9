@@ -3,11 +3,10 @@ import { CourseProps } from '../../types/types';
 import { ChartBarIcon } from '@heroicons/react/24/outline';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 
-interface CoursePropsFunction {
-  courseList: CourseProps[];
-}
-
-export default function CourseCard({ courseList }: CoursePropsFunction) {
+export default function CourseCard({ courseList }: { courseList: CourseProps[] | null }) {
+  if (courseList === null) {
+    return null;
+  }
   return (
     <>
       {courseList.map((course) => (

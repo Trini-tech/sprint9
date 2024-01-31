@@ -64,7 +64,9 @@ export default function Navbar(): JSX.Element {
               {/*Login, Signup, Languages */}
               <div className="hidden md:flex absolute inset-y-0 right-0 items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="items-center self-center flex justify-between gap-5">
-                  <button className="justify-center self-center text-slate-600 text-sm font-medium my-auto">Accedeix</button>
+                  <Link to="/login" className="justify-center self-center text-slate-600 text-sm font-medium my-auto">
+                    Accedeix
+                  </Link>
                   <Button styles="bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)]">Registre</Button>
                 </div>
                 {/* -- Language dropdown */}
@@ -164,6 +166,7 @@ export default function Navbar(): JSX.Element {
   );
 }
 
+/* 
 interface CustomLinkProps {
   to: string;
   children: React.ReactNode;
@@ -179,4 +182,4 @@ function CustomLink({ to, children, ...props }: CustomLinkProps): JSX.Element {
       </Link>
     </li>
   );
-}
+} */

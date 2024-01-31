@@ -1,12 +1,12 @@
 import ciberLogo from '/ciberlogo.svg';
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from './atoms/Button';
 
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import SearchBar from './SearchBar';
 
 const navigation = [
   { name: 'Centres', href: '/centres', current: false },
@@ -47,16 +47,7 @@ export default function Navbar(): JSX.Element {
                       </a>
                     ))}
                     {/* -- searchbar: https://tailwindcomponents.com/component/voice-search*/}
-                    <div className="w-[25rem] mx-auto">
-                      <form className="flex items-center">
-                        <div className="relative w-full">
-                          <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                            <MagnifyingGlassIcon className="justify-center text-gray-500 aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
-                          </div>
-                          <input type="text" id="search" className="bg-slate-100 text-slate-600 border border-gray-100 appearance-none block w-full text-sm rounded-lg py-3 px-4 focus:bg-gray-50 focus:border-slate-400 focus:outline-none  pl-10 p-2.5" placeholder="Cercador de cursos" required />
-                        </div>
-                      </form>
-                    </div>
+                    <SearchBar />
                   </div>
                 </div>
               </div>
@@ -165,21 +156,3 @@ export default function Navbar(): JSX.Element {
     </Disclosure>
   );
 }
-
-/* 
-interface CustomLinkProps {
-  to: string;
-  children: React.ReactNode;
-}
-
-function CustomLink({ to, children, ...props }: CustomLinkProps): JSX.Element {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-  return (
-    <li className={isActive ? 'border-b-2 border-pink-600' : ''}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-} */

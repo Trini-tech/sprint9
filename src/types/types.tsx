@@ -13,4 +13,6 @@ export type CourseProps = {
   sessions: string;
   availability: boolean;
   img?: string;
+  modality?: string;
+  category?: string;
 };

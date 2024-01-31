@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import Datepicker, { DateValueType } from 'react-tailwindcss-datepicker'; ////https://react-tailwindcss-datepicker.vercel.app/props#container-class
 import DisclosureFilterCheckbox from '../../../components/atoms/DisclosureFilter';
-import courseFilters from '../../../data/courseFilters.json';
+import { Filter } from '../../../types/types';
 
 interface DatepickerValue {
   startDate: Date;
   endDate: Date;
 }
 
-export default function FiltersMenu() {
+export default function FiltersSection({ courseFilters }: { courseFilters: Filter[] }) {
   const [value, setValue] = useState<DatepickerValue>({
     startDate: new Date(),
     endDate: new Date(new Date().setMonth(new Date().getMonth() + 11)),
@@ -41,7 +41,9 @@ export default function FiltersMenu() {
           showShortcuts={false}
         />
         {/*Filters*/}
-        <DisclosureFilterCheckbox courseFilters={courseFilters} />
+        {courseFilters.map((coursefilter) => (
+          <DisclosureFilterCheckbox key={coursefilter.title} coursefilter={coursefilter} />
+        ))}
       </div>
     </>
   );

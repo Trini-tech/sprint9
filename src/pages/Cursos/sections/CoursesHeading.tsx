@@ -1,12 +1,11 @@
 import Badge from '../../../components/atoms/Badge';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
-export default function CursosHeading() {
+export default function CoursesHeading() {
   return (
     <>
       {/*Results */}
-      <div className="text-gray-500 text-base leading-7 max-md:max-w-full">200+ Resultats de “UX UI”</div>
-
+      <div className="text-gray-500 text-base leading-7 max-md:max-w-full">Resultats de</div>
       <div className="justify-between items-stretch flex w-full gap-5 mt-6 border-b border-gray-200 pb-6 max-md:max-w-full max-md:flex-wrap">
         {/*Badges*/}
         <span className="items-center flex gap-2">

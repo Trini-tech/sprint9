@@ -15,7 +15,7 @@ export default function Button(props: Props) {
   //bg-teal-500 habilitat
 
   return (
-    <button onClick={props?.handleClick} className={`${props.styles} text-white text-sm font-bold justify-center items-stretch px-4 py-3 rounded-lg self-end`} type={props?.type} disabled={props?.disabled}>
+    <button onClick={props?.handleClick} className={`${props.styles} flex text-white text-sm justify-center font-bold items-center px-4 py-3 rounded-lg self-center`} type={props?.type} disabled={props?.disabled}>
       {props.children}
     </button>
   );

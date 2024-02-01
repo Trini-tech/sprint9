@@ -1,5 +1,5 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
-import { useSearch } from '../context/SearchContext';
+import { useSearch } from '../../context/SearchContext';
 
 export default function SearchBar() {
   const { setSearchFilter } = useSearch();

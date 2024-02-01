@@ -1,10 +1,10 @@
 import Footer from './components/Footer';
-import Navbar from './navigation/Navbar';
+import Navbar from './components/navigation/Navbar';
 import Homepage from './pages/Homepage/Homepage';
 import Centres from './pages/Centres';
 import Cursos from './pages/Cursos/CoursesPage';
 import LoginComponent from './pages/Login_Signup/Login';
-import ScrollToTop from './navigation/ScrollToTop';
+import ScrollToTop from './components/navigation/ScrollToTop';
 import { SearchProvider } from './context/SearchContext';
 import { Route, Routes } from 'react-router-dom';
 

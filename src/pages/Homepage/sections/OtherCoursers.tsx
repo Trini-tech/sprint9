@@ -49,13 +49,6 @@ export default function Othercourses() {
             </div>
           </div>
         </div>
-        <div className="items-center shadow-sm flex aspect-[1.0212765957446808] flex-col justify-center my-auto">
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2ee69b9f-be21-479c-8dea-b10564320ee8?apiKey=f46cbfe603664861b277383241817b92&"
-            className="aspect-[1.02] object-contain object-center w-12 overflow-hidden rounded-[50%]"
-          />
-        </div>
       </div>
     </>
   );

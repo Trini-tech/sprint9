@@ -1,0 +1,67 @@
+[
+  {
+    "centerType": "Cibernàriums",
+    "centers": [
+      {
+        "centerName": "Cibernàrium 22@",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      },
+      {
+        "centerName": "Cibernàrium Nou Barris",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      }
+    ]
+  },
+  {
+    "centerType": "Biblioteques",
+    "centers": [
+      {
+        "centerName": "Biblioteca de Gràcia",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      },
+      {
+        "centerName": "Biblioteca de Poblenou",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      }
+    ]
+  },
+  {
+    "centerType": "Ateneus",
+    "centers": [
+      {
+        "centerName": "Ateneu 1",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      },
+      {
+        "centerName": "Ateneu 2",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      }
+    ]
+  },
+  {
+    "centerType": "Plaça Catalunya",
+    "centers": [
+      {
+        "centerName": "Plaça Catalunya",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      }
+    ]
+  },
+  {
+    "centerType": "Canòdrom",
+    "centers": [
+      {
+        "centerName": "Canòdrom",
+        "address": "Carrer de Marie Curie, 8 - 14, Nou Barris, 08042 Barcelona",
+        "openHours": "De dilluns a divendres de 9 a 21 h"
+      }
+    ]
+  }
+]

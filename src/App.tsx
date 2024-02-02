@@ -1,8 +1,8 @@
 import Footer from './components/Footer';
 import Navbar from './components/navigation/Navbar';
 import Homepage from './pages/Homepage/Homepage';
-import Centres from './pages/Centres';
-import Cursos from './pages/Cursos/CoursesPage';
+import Centers from './pages/Centers/CentersPage';
+import Cursos from './pages/Courses/CoursesPage';
 import LoginComponent from './pages/Login_Signup/Login';
 import ScrollToTop from './components/navigation/ScrollToTop';
 import { SearchProvider } from './context/SearchContext';
@@ -17,7 +17,7 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/centres" element={<Centres />} />
+            <Route path="/centres" element={<Centers />} />
             <Route path="/cursos" element={<Cursos />} />
             <Route path="/login" element={<LoginComponent />} />
           </Routes>

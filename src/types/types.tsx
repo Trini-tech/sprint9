@@ -16,3 +16,14 @@ export type CourseProps = {
   modality?: string;
   category?: string;
 };
+
+export interface CenterList {
+  centerType?: string;
+  centers: Center[];
+}
+
+export interface Center {
+  centerName: string;
+  address: string;
+  openHours: string;
+}

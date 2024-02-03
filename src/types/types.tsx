@@ -27,3 +27,11 @@ export interface Center {
   address: string;
   openHours: string;
 }
+
+export type Activity = {
+  id: number;
+  date: string;
+  hours: string;
+  title: string;
+  center: string;
+};

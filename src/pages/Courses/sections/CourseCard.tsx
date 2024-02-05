@@ -7,17 +7,15 @@ export default function CourseCard({ course }: { course: CourseProps | null }) {
   if (course === null) {
     return null;
   }
+
+  console.log(course.image);
   return (
     <>
       <div key={course.id} className="py-6 border-b border-gray-200  max-md:max-w-full">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
-            <div className="justify-center items-center border border-[color:var(--gray-200,#E5E7EB)] flex flex-col w-full my-auto rounded-xl border-solid max-md:mt-10">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/60a74484ee1a2d0be651e5cf1fae99a10e3706b130207c6492059e1021100a7c?apiKey=f46cbfe603664861b277383241817b92&"
-                className="aspect-[1.45] object-contain object-center w-[215px] overflow-hidden"
-              />
+          <div className="flex flex-col items-stretch justify-center w-3/12 max-md:w-full max-md:ml-0">
+            <div className="overflow-hidden justify-center items-center border border-gray-200 w-full my-auto rounded-xl border-solid max-md:mt-10">
+              <img loading="lazy" srcSet={course.image} className="object-contain object-center w-[215px] " />
             </div>
           </div>
           <div className="flex flex-col items-stretch w-9/12 ml-5 max-md:w-full max-md:ml-0">

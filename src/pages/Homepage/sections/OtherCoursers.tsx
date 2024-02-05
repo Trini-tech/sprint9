@@ -2,11 +2,11 @@ export default function Othercourses() {
   return (
     <>
       <div className="items-center self-stretch flex justify-between gap-5 px-28 py-12 max-md:max-w-full max-md:flex-wrap max-md:px-5">
-        <div className="items-stretch flex grow basis-[0%] flex-col my-auto max-md:max-w-full">
+        <div className="items-stretch my-auto max-md:max-w-full">
           <h3 className="text-slate-950 leading-10 max-md:max-w-full">També et pot interessar</h3>
           <div className="mt-12 max-md:max-w-full max-md:mt-10">
-            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="items-stretch w-full">
                 <div className="items-stretch flex flex-col max-md:mt-7">
                   <img
                     loading="lazy"
@@ -17,7 +17,7 @@ export default function Othercourses() {
                   <div className="text-slate-950 text-lg font-bold leading-8 mt-1">Comença a utilitzar el teu ordinador</div>
                 </div>
               </div>
-              <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+              <div className="items-stretch w-full">
                 <div className="items-stretch flex flex-col max-md:mt-7">
                   <img
                     loading="lazy"
@@ -28,7 +28,7 @@ export default function Othercourses() {
                   <div className="text-slate-950 text-lg font-bold leading-8 whitespace-nowrap mt-1">Introducció al full de càlcul</div>
                 </div>
               </div>
-              <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+              <div className="items-stretch w-full">
                 <div className="items-stretch flex grow flex-col max-md:mt-7">
                   <img
                     loading="lazy"
@@ -39,7 +39,7 @@ export default function Othercourses() {
                   <div className="text-slate-950 text-lg font-bold leading-8 mt-1">Creativitat: implementa idees innovadores en el teu pla de màrqueting digital</div>
                 </div>
               </div>
-              <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+              <div className="items-stretch w-full">
                 <div className="items-stretch flex flex-col max-md:mt-7">
                   <div className="text-white text-center text-4xl font-bold leading-10 whitespace-nowrap bg-[radial-gradient(700.79%_220.74%_at_-34.85%_-44.16%,#B92C98_2.08%,#D50283_52.6%,#FC466B_100%)] justify-center items-stretch pt-20 pb-16 px-8 rounded-[30px] max-md:px-5">IT ACADEMY</div>
                   <p className="text-slate-700 font-bold leading-7 mt-2.5">Online</p>

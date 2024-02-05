@@ -7,6 +7,7 @@ import LoginComponent from './pages/Login_Signup/Login';
 import ScrollToTop from './components/navigation/ScrollToTop';
 import { SearchProvider } from './context/SearchContext';
 import { Route, Routes } from 'react-router-dom';
+import SignupComponent from './pages/Login_Signup/Signup';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/centres" element={<Centers />} />
             <Route path="/cursos" element={<Cursos />} />
             <Route path="/login" element={<LoginComponent />} />
+            <Route path="/signup" element={<SignupComponent />} />
           </Routes>
         </div>
         <Footer />

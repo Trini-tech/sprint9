@@ -24,7 +24,7 @@ export default function Centers() {
         <div className="w-full max-md:max-w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             {/*Center List */}
-            <div className="w-full">
+            <div className="w-full overflow-y-scroll">
               <div className="flex flex-col px-2 text-sm text-gray-500 max-md:mt-10 max-md:max-w-full">
                 <div className="pb-2 text-2xl font-medium whitespace-nowrap border-b border-solid border-gray-200 text-blue-950 max-md:max-w-full">Centres</div>
                 {centersList.map((centerType) => (

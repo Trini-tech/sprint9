@@ -1,9 +1,9 @@
-import MapComponent from './MapComponent';
+import MapComponent from './components/MapComponent';
 import centersList from '../../data/centersList.json';
 import activityList from '../../data/activityList.json';
 import TabBar from '../../components/atoms/TabBar';
-import CenterCard from './CenterCard';
-import ActivityCard from './ActivityCard';
+import CenterCard from './components/CenterCard';
+import ActivityCard from './components/ActivityCard';
 
 export default function Centers() {
   return (

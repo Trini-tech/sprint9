@@ -1,4 +1,4 @@
-import { Center } from '../../types/types';
+import { Center } from '../../../types/types';
 import { MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 export default function CenterCard({ center }: { center: Center }) {

@@ -7,8 +7,6 @@ export default function CourseCard({ course }: { course: CourseProps | null }) {
   if (course === null) {
     return null;
   }
-
-  console.log(course.image);
   return (
     <>
       <div key={course.id} className="py-6 border-b border-gray-200  max-md:max-w-full">

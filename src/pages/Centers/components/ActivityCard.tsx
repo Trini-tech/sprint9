@@ -1,4 +1,4 @@
-import { Activity } from '../../types/types';
+import { Activity } from '../../../types/types';
 
 export default function ActivityCard({ activity }: { activity: Activity }) {
   return (

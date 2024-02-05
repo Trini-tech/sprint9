@@ -5,9 +5,10 @@ import Centers from './pages/Centers/CentersPage';
 import Cursos from './pages/Courses/CoursesPage';
 import LoginComponent from './pages/Login_Signup/Login';
 import ScrollToTop from './components/navigation/ScrollToTop';
+import SignupComponent from './pages/Login_Signup/Signup';
+
 import { SearchProvider } from './context/SearchContext';
 import { Route, Routes } from 'react-router-dom';
-import SignupComponent from './pages/Login_Signup/Signup';
 
 function App() {
   return (

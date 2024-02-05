@@ -18,7 +18,7 @@ type InputType = 'email' | 'password';
 interface Props {
   iconName: Icons;
   placeholder: string;
-  type?: InputType;
+  type: InputType;
 }
 
 export default function InputIcon(props: Props) {
@@ -26,7 +26,7 @@ export default function InputIcon(props: Props) {
 
   return (
     <>
-      <div className="relative w-full py-3">
+      <div className="relative w-full py-1">
         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">{icon}</div>
         <input
           type={props.type}

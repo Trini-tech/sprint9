@@ -1,9 +1,9 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid';
-import ciberLogo from '/ciberlogo.svg';
-import bcnActivaLogo from '/BCNActiva.png';
-import FacebookLogo from '/FacebookLogo.svg';
-import TwitterLogo from '/TwitterLogo.svg';
-import InstagramLogo from '/InstagramLogo.svg';
+import ciberLogo from '../../public/ciberlogo.svg';
+import bcnActivaLogo from '../../public/BCNActiva.png';
+import FacebookLogo from '../../public/FacebookLogo.svg';
+import TwitterLogo from '../../public/TwitterLogo.svg';
+import InstagramLogo from '../../public/InstagramLogo.svg';
 
 export default function Footer() {
   return (

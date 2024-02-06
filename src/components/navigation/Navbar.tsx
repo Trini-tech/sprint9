@@ -40,12 +40,13 @@ export default function Navbar(): JSX.Element {
                   </Link>
                 </div>
                 <div className="hidden lg:ml-6 lg:block">
-                  <div className="flex items-center space-x-4">
-                    {navigation.map((item) => (
-                      <a key={item.name} href={item.href} className={classNames(item.current ? ' text-slate-600' : 'text-slate-600 hover:text-pink-600', 'rounded-md px-3 py-2 text-sm font-medium')} aria-current={item.current ? 'page' : undefined}>
-                        {item.name}
-                      </a>
-                    ))}
+                  <div className="flex items-center space-x-4 px-1 gap-1">
+                    <Link to="/centres" className="justify-center self-center text-slate-600 hover:text-pink-600 text-sm font-medium my-auto">
+                      Centres
+                    </Link>
+                    <Link to="/cursos" className="justify-center self-center text-slate-600 hover:text-pink-600 text-sm font-medium my-auto">
+                      Cursos
+                    </Link>
                     {/* -- searchbar: https://tailwindcomponents.com/component/voice-search*/}
                     <SearchBar />
                   </div>

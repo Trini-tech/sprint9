@@ -8,11 +8,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import SearchBar from './SearchBar';
 import LanguageDropdown from './LangDropdown';
 
-const navigation = [
-  { name: 'Centres', href: '/centres', current: false },
-  { name: 'Cursos', href: '/cursos', current: false },
-];
-
 function classNames(...classes: (string | undefined | null | false)[]): string {
   return classes.filter(Boolean).join(' ');
 }
@@ -71,15 +66,18 @@ export default function Navbar(): JSX.Element {
           {/* Collapse Menu*/}
           <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {/* Centres i cursos dropdown */}
-              {navigation.map((item) => (
-                <Disclosure.Button key={item.name} as="a" href={item.href} className={classNames('text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm')} aria-current={item.current ? 'page' : undefined}>
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-              {/*Accedeix i registre */}
-              <Disclosure.Button className={'text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm'}>Accedeix</Disclosure.Button>
-              <Disclosure.Button className={'text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm'}>Registre</Disclosure.Button>
+              <Disclosure.Button className={classNames('text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm')}>
+                <Link to="/centres">Centres</Link>
+              </Disclosure.Button>
+              <Disclosure.Button className={classNames('text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm')}>
+                <Link to="/cursos">Cursos</Link>
+              </Disclosure.Button>
+              <Disclosure.Button className={'text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm'}>
+                <Link to="/login">Accedeix</Link>
+              </Disclosure.Button>
+              <Disclosure.Button className={'text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm'}>
+                <Link to="/signup">Registre</Link>
+              </Disclosure.Button>
               <LanguageDropdown />
             </div>
           </Disclosure.Panel>

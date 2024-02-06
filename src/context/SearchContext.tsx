@@ -1,16 +1,33 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import { CourseProps } from '../types/types';
+import { getCourses } from '../services/index';
 
 interface SearchContextProps {
   searchFilter: string;
   setSearchFilter: React.Dispatch<React.SetStateAction<string>>;
+  filteredCourses: CourseProps[];
 }
 
 const SearchContext = createContext<SearchContextProps | undefined>(undefined);
 
 export const SearchProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [searchFilter, setSearchFilter] = useState<string>('');
+  const [courses, setCourses] = useState<CourseProps[] | null>([]);
 
-  return <SearchContext.Provider value={{ searchFilter, setSearchFilter }}>{children}</SearchContext.Provider>;
+  useEffect(() => {
+    getCourses().then(([data]) => {
+      setCourses(data);
+    });
+  }, []);
+
+  const filteredCourses =
+    courses && typeof searchFilter === 'string' && searchFilter.length > 0
+      ? courses.filter((course) => {
+          return course.title.toLowerCase().includes(searchFilter.toLowerCase());
+        })
+      : courses || [];
+
+  return <SearchContext.Provider value={{ searchFilter, setSearchFilter, filteredCourses }}>{children}</SearchContext.Provider>;
 };
 
 export const useSearch = (): SearchContextProps => {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Datepicker, { DateValueType } from 'react-tailwindcss-datepicker'; ////https://react-tailwindcss-datepicker.vercel.app/props#container-class
-import DisclosureFilterCheckbox from '../../../components/atoms/DisclosureFilter';
+import DisclosureFilterCheckbox from './DisclosureFilter';
 import { Filter } from '../../../types/types';
 
 interface DatepickerValue {

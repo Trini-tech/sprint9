@@ -1,28 +1,12 @@
 import FiltersSection from './sections/FiltersSection';
 /* import Pagination from '../../components/atoms/Pagination';*/
 import CoursesHeading from './sections/CoursesHeading';
-import { getCourses } from '../../services';
-import { useState, useEffect } from 'react';
-import { CourseProps } from '../../types/types';
 import CoursesSection from './sections/CoursesSection';
 import courseFilters from '../../data/courseFilters.json';
 import { useSearch } from '../../context/SearchContext';
 
 export default function Cursospage() {
-  const [courses, setCourses] = useState<CourseProps[] | null>([]);
-  const { searchFilter } = useSearch();
-  useEffect(() => {
-    getCourses().then(([data]) => {
-      setCourses(data);
-    });
-  }, []);
-
-  const filteredCourses =
-    courses && typeof searchFilter === 'string' && searchFilter.length > 0
-      ? courses.filter((course) => {
-          return course.title.toLowerCase().includes(searchFilter.toLowerCase());
-        })
-      : courses || [];
+  const { filteredCourses } = useSearch();
 
   return (
     <div className="w-full mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

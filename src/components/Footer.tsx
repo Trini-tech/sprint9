@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="justify-between items-stretch flex w-full gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
-          <div className="items-start flex flex-col gap-1 px-1">
+          <div className="items-start flex flex-col gap-8 px-1 pr-20">
             <div className="flex gap-5">
               <div className="self-stretch">
                 <img src={ciberLogo} className="logo" alt="Cibernarium logo" />
@@ -36,8 +36,8 @@ export default function Footer() {
                 <img src={bcnActivaLogo} className="logo" alt="Barcelona Activa logo" />
               </div>
             </div>
-            <div className="text-slate-600 text-sm self-stretch mt-7">Cibernàrium és una xarxa de centres de Barcelona on s'imparteix formació tecnològica de tots els nivells.</div>
-            <div className="items-stretch self-stretch flex gap-4 mt-8 pr-20 max-md:pr-5">
+            <div className="text-slate-600 text-sm self-stretch">Cibernàrium és una xarxa de centres de Barcelona on s'imparteix formació tecnològica de tots els nivells.</div>
+            <div className="items-stretch self-stretch flex gap-4 pr-20 max-md:pr-5">
               <img src={TwitterLogo} className="logo" alt="Twitter logo" />
               <img src={FacebookLogo} className="logo" alt="Facebook logo" />
               <img src={InstagramLogo} className="logo" alt="Instagram logo" />

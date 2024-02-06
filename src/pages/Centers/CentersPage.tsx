@@ -4,7 +4,7 @@ import TabBar from '../../components/atoms/TabBar';
 import CenterCard from './components/CenterCard';
 import ActivityCard from './components/ActivityCard';
 
-export default function Centers() {
+export default function CentersPage() {
   return (
     <div className="flex flex-col self-stretch px-5 lg:px-28">
       {/*Mapa */}

@@ -5,7 +5,7 @@ import CoursesSection from './sections/CoursesSection';
 import courseFilters from '../../data/courseFilters.json';
 import { useSearch } from '../../context/SearchContext';
 
-export default function Cursospage() {
+export default function CoursesPage() {
   const { filteredCourses } = useSearch();
 
   return (

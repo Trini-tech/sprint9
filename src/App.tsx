@@ -15,7 +15,7 @@ function App() {
     <SearchProvider>
       <>
         <Navbar />
-        <div className="container max-w-full">
+        <div className="container max-w-full overflow-hidden">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Homepage />} />

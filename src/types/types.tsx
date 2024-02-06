@@ -13,8 +13,8 @@ export type CourseProps = {
   sessions: string;
   availability: boolean;
   image: string;
-  modality?: string;
-  category?: string;
+  modality: string;
+  category: string;
 };
 
 export interface CenterList {

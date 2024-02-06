@@ -1,4 +1,4 @@
-import { APIProvider, Map } from '@vis.gl/react-google-maps';
+/* import { APIProvider, Map } from '@vis.gl/react-google-maps';
 const mapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 export default function MapComponent() {
@@ -9,4 +9,4 @@ export default function MapComponent() {
       </div>
     </APIProvider>
   );
-}
+} */

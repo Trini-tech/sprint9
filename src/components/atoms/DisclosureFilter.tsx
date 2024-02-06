@@ -18,7 +18,7 @@ export default function DisclosureFilterCheckbox({ coursefilter }: { coursefilte
                   {coursefilter.types.map((type) => (
                     <li key={type} className="w-full">
                       <span className="items-stretch content-center flex-wrap flex gap-2.5 mt-6">
-                        <input id={`${type}-checkbox`} type="checkbox" value="" className="w-5 h-5 accent-pink-600" />
+                        <input id={`${type}-checkbox`} type="checkbox" value={`${type}`} className="w-5 h-5 accent-pink-600" />
                         <label htmlFor={`${type}-checkbox`} className="text-blue-950 text-sm leading-5">
                           {type}
                         </label>

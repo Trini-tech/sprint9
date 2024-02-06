@@ -1,12 +1,12 @@
 import Button from '../../../components/atoms/Button';
 import { CourseProps } from '../../../types/types';
-import { ChartBarIcon } from '@heroicons/react/24/outline';
-import { CalendarIcon } from '@heroicons/react/24/outline';
+import { CalendarIcon, ChartBarIcon, TagIcon } from '@heroicons/react/24/outline';
 
 export default function CourseCard({ course }: { course: CourseProps | null }) {
   if (course === null) {
     return null;
   }
+  console.log(course);
   return (
     <>
       <div key={course.id} className="py-6 border-b border-gray-200  max-md:max-w-full">
@@ -18,7 +18,9 @@ export default function CourseCard({ course }: { course: CourseProps | null }) {
           </div>
           <div className="flex flex-col items-stretch w-9/12 ml-5 max-md:w-full max-md:ml-0">
             <span className="items-stretch self-stretch flex grow flex-col max-md:max-w-full max-md:mt-6">
-              <div className="text-pink-600 text-sm leading-5 max-md:max-w-full">{course.location}</div>
+              <div className="text-pink-600 text-sm leading-5 max-md:max-w-full">
+                {course.location} - {course.modality}
+              </div>
               <div className="text-blue-950 text-xl font-bold leading-7 mt-3 max-md:max-w-full">{course.title}</div>
               <div className="text-gray-500 text-sm leading-5 mt-3 max-md:max-w-full">{course.description}</div>
               <div className="items-stretch flex justify-between gap-4 max-md:max-w-full max-md:flex-wrap">
@@ -32,6 +34,10 @@ export default function CourseCard({ course }: { course: CourseProps | null }) {
                     <div className="text-gray-500 text-sm leading-5 grow max-md:max-w-full">
                       {course.schedule} - Durada: {course.sessions} sessions
                     </div>
+                  </span>
+                  <span className="bg-gray-100 rounded-md py-1 px-2 flex gap-2 mt-2 max-md:max-w-full max-md:flex-wrap">
+                    <TagIcon className=" text-gray-500 aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
+                    <div className=" text-gray-500 text-xs leading-5 max-md:max-w-full">{course.category}</div>
                   </span>
                 </div>
                 <span className="justify-end items-stretch flex basis-[0%] flex-col">

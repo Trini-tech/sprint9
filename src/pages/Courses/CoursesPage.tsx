@@ -6,7 +6,7 @@ import courseFilters from '../../data/courseFilters.json';
 import { useSearch } from '../../context/SearchContext';
 
 export default function CoursesPage() {
-  const { filteredCourses } = useSearch();
+  const { coursesToShow } = useSearch();
 
   return (
     <div className="w-full mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ export default function CoursesPage() {
               <div className="flex flex-col items-stretch w-full lg:w-[72%]">
                 <span className="items-stretch self-stretch flex grow flex-col py-10 max-md:max-w-full">
                   <CoursesHeading />
-                  <CoursesSection courseList={filteredCourses} />
+                  <CoursesSection courseList={coursesToShow} />
                 </span>
               </div>
             </div>

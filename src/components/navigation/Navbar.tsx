@@ -1,4 +1,4 @@
-import ciberLogo from '../../../public/ciberlogo.svg';
+import ciberLogo from '../../assets/logos/ciberlogo.svg';
 import { Link } from 'react-router-dom';
 import Button from '../atoms/Button';
 

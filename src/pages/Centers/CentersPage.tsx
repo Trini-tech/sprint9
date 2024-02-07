@@ -13,7 +13,7 @@ export default function CentersPage() {
       </div>
       {/*TabBar */}
       <div className="flex flex-col justify-center items-start px-2 pt-6 w-full text-base max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 justify-between items-center max-md:flex-wrap max-md:max-w-full">
+        <div className="flex gap-2 justify-between items-center max-md:flex-wrap max-md:max-w-full">
           <div className="flex gap-1 self-stretch my-auto whitespace-nowrap">
             <div className="grow font-bold text-gray-500">Tots els centres</div>
             <div className="font-medium text-zinc-400">128</div>

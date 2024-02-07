@@ -24,7 +24,7 @@ export default function CourseCard({ course }: { course: CourseProps | null }) {
                 <div className="justify-end flex grow basis-[0%] flex-col pt-5 items-start max-md:max-w-full">
                   <span className="items-stretch flex gap-2">
                     <ChartBarIcon className=" text-gray-500 aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full" />
-                    <div className="text-gray-500 text-sm marker:grow whitespace-nowrap">{course.level}</div>
+                    <div className="text-gray-500 text-sm marker:grow whitespace-nowrap">Nivell {course.level}</div>
                   </span>
                   <span className="items-stretch self-stretch flex justify-between gap-2 mt-2 max-md:max-w-full max-md:flex-wrap">
                     <CalendarIcon className=" text-gray-500 aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full" />{' '}

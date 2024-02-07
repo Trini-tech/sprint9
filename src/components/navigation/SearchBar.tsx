@@ -5,7 +5,7 @@ export default function SearchBar() {
   const { setSearchFilter } = useSearch();
 
   return (
-    <div className="w-[25rem] mx-auto">
+    <div className="max-lg:w-full w-[25rem]">
       <form className="flex items-center">
         <div className="relative w-full">
           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">

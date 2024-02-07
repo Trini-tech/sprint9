@@ -7,7 +7,7 @@ import InstagramLogo from '../assets/logos/InstagramLogo.svg';
 
 export default function Footer() {
   return (
-    <div className="justify-center items-center self-stretch bg-slate-100 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5">
+    <div className="justify-center items-center self-stretch bg-slate-100 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5 overflow-hidden">
       <div className="flex w-full flex-col items-stretch mt-6 max-md:max-w-full">
         {/* Newsletter form */}
         <div className="justify-between grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">

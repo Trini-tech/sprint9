@@ -37,7 +37,7 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
 
   return (
     <>
-      <div className="items-stretch grid grid-cols-1 pr-10 py-10 max-md:pr-5">
+      <div className="items-stretch grid grid-cols-1 pr-10 py-10">
         {/*Title*/}
         <span className="justify-start items-center flex gap-5">
           <div className="text-blue-950 text-base font-bold pl-2 leading-7 mb-6">Filtrar per</div>
@@ -59,7 +59,7 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
         />
         {/*Filters*/}
         {courseFilters.map((coursefilter) => (
-          <div key={coursefilter.title} className="border border-solid border-gray-200 flex w-full flex-col mt-6 pt-4 pb-4 px-7 rounded-lg max-md:px-5">
+          <div key={coursefilter.title} className="border border-solid border-gray-200 min-w-fit flex w-full flex-col mt-6 pt-4 pb-4 px-7 rounded-lg">
             <Disclosure>
               {({ open }) => (
                 <>
@@ -67,7 +67,7 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
                     <span className="flex w-full justify-start rounded-lg text-left text-base font-bold text-blue-950 ">{coursefilter.title}</span>
                     <ChevronDownIcon className={`${open ? 'rotate-180 transform' : ''} h-[20px] w-[20px] rounded-lg text-blue-950 font-bold`} />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="pb-2 text-base text-zinc-800 leading-7">
+                  <Disclosure.Panel className="pb-2 text-base text-zinc-800">
                     <ul className="w-48 text-sm">
                       {coursefilter.types.map((type) => (
                         <li key={type} className="w-full">

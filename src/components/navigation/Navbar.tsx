@@ -14,7 +14,7 @@ function classNames(...classes: (string | undefined | null | false)[]): string {
 
 export default function Navbar(): JSX.Element {
   return (
-    <Disclosure as="nav" className="bg-white border-b border-slate-100 sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500">
+    <Disclosure as="nav" className="bg-white border-b border-slate-100 sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 overflow-hidden">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -66,6 +66,7 @@ export default function Navbar(): JSX.Element {
           {/* Collapse Menu*/}
           <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
+              <SearchBar />
               <Disclosure.Button className={classNames('text-slate-600 hover:text-pink-600 block rounded-md px-3 py-2 text-sm')}>
                 <Link to="/centres">Centres</Link>
               </Disclosure.Button>

@@ -18,7 +18,7 @@ export default function CentersPage() {
             <div className="grow font-bold text-gray-500">Tots els centres</div>
             <div className="font-medium text-zinc-400">128</div>
           </div>
-          <TabBar centersList={centersList} />
+          <TabBar list={centersList} />
         </div>
       </div>
       {/*Centers and Activities */}

@@ -15,17 +15,19 @@ export default function CoursesHeading() {
       <div className="text-gray-500 text-base max-md:max-w-full">
         {coursesToShowLength} Resultat/s {searchFilter.length > 0 && `de "${searchFilter}"`}
       </div>
-      <div className="justify-between items-stretch flex w-full gap-5 mt-4 border-b border-gray-200 pb-6 max-md:max-w-full max-md:flex-wrap">
+      <div className="justify-start items-stretch flex w-full gap-5 mt-4 border-b border-gray-200 pb-6 max-md:max-w-full max-md:flex-wrap">
         {/*Badges*/}
         {checkedFilters.selections.length > 0 && (
           <span className="items-center flex gap-2 flex-wrap">
             {checkedFilters.selections.map((fil) => (
               <Badge key={fil}>{fil}</Badge>
             ))}
-            <button className="text-gray-500 text-sm my-auto hover:text-pink-600" onClick={handleClearFilters}>
-              Borrar tot
-            </button>
           </span>
+        )}
+        {(checkedFilters.selections.length > 0 || searchFilter.length > 0) && (
+          <button className="text-gray-500 text-sm my-auto hover:text-pink-600" onClick={handleClearFilters}>
+            Netejar búsqueda
+          </button>
         )}
         {/*Order*/}
         {/*         <span className="flex items-stretch gap-2.5 my-auto">

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "centerType": "Cibernàriums",
     "centers": [
       {
@@ -15,6 +16,7 @@
     ]
   },
   {
+    "id": 2,
     "centerType": "Biblioteques",
     "centers": [
       {
@@ -30,6 +32,7 @@
     ]
   },
   {
+    "id": 3,
     "centerType": "Ateneus",
     "centers": [
       {
@@ -45,6 +48,7 @@
     ]
   },
   {
+    "id": 4,
     "centerType": "Plaça Catalunya",
     "centers": [
       {
@@ -55,6 +59,7 @@
     ]
   },
   {
+    "id": 5,
     "centerType": "Canòdrom",
     "centers": [
       {

@@ -80,7 +80,7 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
                               checked={checkedFilters.selections.includes(type)}
                               onChange={() => handleCheckboxChange(type)}
                             />
-                            <label htmlFor={`${type}-checkbox`} className="text-blue-950 text-sm leading-5">
+                            <label htmlFor={`${type}-checkbox`} className="text-blue-950 text-sm leading-5 cursor-pointer">
                               {type}
                             </label>
                           </span>

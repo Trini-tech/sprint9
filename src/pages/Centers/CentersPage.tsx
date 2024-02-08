@@ -13,15 +13,11 @@ export default function CentersPage() {
       </div>
       {/*TabBar */}
       <div className="flex flex-col justify-center items-start px-2 pt-6 w-full text-base max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-2 justify-between items-center max-md:flex-wrap max-md:max-w-full">
-          <div className="flex gap-1 self-stretch my-auto whitespace-nowrap">
-            <div className="grow font-bold text-gray-500">Tots els centres</div>
-            <div className="font-medium text-zinc-400">128</div>
-          </div>
+        <div className="flex flex-wrap items-center w-full">
           <TabBar list={centersList} />
         </div>
       </div>
-      {/*Centers and Activities */}
+      {/*Centers and Activities --> S'ha de fer amb input radio */}
       <div className="flex justify-center items-center py-6 w-full">
         <div className="w-full max-md:max-w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">

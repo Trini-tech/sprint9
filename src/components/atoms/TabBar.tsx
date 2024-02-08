@@ -4,7 +4,6 @@ import { RadioGroup } from '@headlessui/react';
 
 export default function TabBar({ list }: { list: CenterList[] }) {
   const [selected, setSelected] = useState(list[0]);
-  console.log(selected);
 
   return (
     <div className="w-full flex flex-wrap">
@@ -22,7 +21,7 @@ export default function TabBar({ list }: { list: CenterList[] }) {
               className={({ active, checked }) =>
                 `${active ? '' : ''}
                         ${checked ? 'bg-gray-100 text-gray-500' : 'bg-white '}
-                        px-2 py-2 flex cursor-pointer rounded-lg hover:bg-gray-100 `
+                        px-2 py-2 flex cursor-pointer rounded-lg hover:bg-gray-50 `
               }>
               {({ checked }) => (
                 <>

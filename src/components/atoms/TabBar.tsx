@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CenterList } from '../../types/types';
 import { RadioGroup } from '@headlessui/react';
 
 export default function TabBar({ list }: { list: CenterList[] }) {
-  const [selected, setSelected] = useState(list[0]);
+  const [selected, setSelected] = useState('');
+  useEffect(() => {
+    console.log(selected);
+  }, [selected]);
 
   return (
     <div className="w-full flex flex-wrap">

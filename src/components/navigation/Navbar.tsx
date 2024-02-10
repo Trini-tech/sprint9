@@ -14,7 +14,7 @@ function classNames(...classes: (string | undefined | null | false)[]): string {
 
 export default function Navbar(): JSX.Element {
   return (
-    <Disclosure as="nav" className="bg-white border-b border-slate-100 sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 overflow-hidden">
+    <Disclosure as="nav" className="bg-white border-b border-slate-100 sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 lg:px-8">

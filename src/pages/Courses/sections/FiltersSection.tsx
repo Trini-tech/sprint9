@@ -1,26 +1,10 @@
-import { useState } from 'react';
-import Datepicker, { DateValueType } from 'react-tailwindcss-datepicker'; ////https://react-tailwindcss-datepicker.vercel.app/props#container-class
 import { Filter } from '../../../types/types';
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import { useSearch } from '../../../context/SearchContext';
 
-interface DatepickerValue {
-  startDate: Date;
-  endDate: Date;
-}
-
 export default function FiltersSection({ courseFilters }: { courseFilters: Filter[] }) {
   const { checkedFilters, setCheckedFilters } = useSearch();
-
-  const [value, setValue] = useState<DatepickerValue>({
-    startDate: new Date(),
-    endDate: new Date(new Date().setMonth(new Date().getMonth() + 11)),
-  });
-
-  const handleValueChange = (value: DateValueType) => {
-    setValue(value as DatepickerValue);
-  };
 
   function handleCheckboxChange(key: string) {
     let sel = checkedFilters.selections;
@@ -43,20 +27,6 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
           <div className="text-blue-950 text-base font-bold pl-2 leading-7 mb-6">Filtrar per</div>
         </span>
         {/*Calendar*/}
-        <Datepicker
-          inputClassName="w-full self-center border border-solid border-gray-200 rounded-lg py-4 px-7 justify-center"
-          placeholder={'Selecciona una data'}
-          minDate={new Date('2024-01-01')}
-          /*maxDate={new Date("2023-01-30")}*/
-          asSingle={true}
-          useRange={false}
-          primaryColor={'pink'}
-          startWeekOn="mon"
-          value={value}
-          onChange={handleValueChange}
-          displayFormat={'DD/MM/YYYY'}
-          showShortcuts={false}
-        />
         {/*Filters*/}
         {courseFilters.map((coursefilter) => (
           <div key={coursefilter.title} className="border border-solid border-gray-200 min-w-fit flex w-full flex-col mt-6 pt-4 pb-4 px-7 rounded-lg">

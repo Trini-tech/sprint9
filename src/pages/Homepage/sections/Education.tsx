@@ -20,17 +20,17 @@ export default function Education() {
     {
       title: 'IT Academy',
       description: "Per formar a aquelles persones que vulguin fer un procés de reconversió laboral cap al sector TIC o bé reciclar-se dins d'aquest sector.",
+      extraText: 'Formació especialitzada de llarga duració',
       img: 'https://cdn.builder.io/api/v1/image/assets/TEMP/3f51fe881cd0f6c7012f30e49191720733badfa3b5cfa087bce99af88b816097?apiKey=f46cbfe603664861b277383241817b92&',
       buttonText: 'Veure els cursos',
-      extraText: 'Formació especialitzada de llarga duració',
       reverse: false,
     },
   ];
 
   return (
     <div className="flex flex-col w-full">
-      {sections.map((section, idx) => (
-        <div key={section.title} className="flex flex-col max-md:flex-col md:flex-row w-full items-center justify-center bg-white py-12 px-5 md:px-16 gap-6 md:gap-8">
+      {sections.map((section) => (
+        <div key={section.title} className="flex flex-col md:flex-row w-full items-center justify-center bg-white py-12 px-5 md:px-16 gap-6 md:gap-8">
           {!section.reverse && (
             <div className="flex-1 flex justify-center items-center">
               <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-md md:max-w-full object-contain aspect-auto" />

@@ -28,12 +28,12 @@ export default function Education() {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center">
+    <div className="flex flex-col w-full items-center gap-10">
       {sections.map((section) => (
         <div key={section.title} className="flex flex-col md:flex-row w-full max-w-[1176px] items-center justify-center bg-white py-12 px-5 md:px-16 gap-6 md:gap-8">
           {!section.reverse && (
             <div className="flex-1 flex justify-center items-center">
-              <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-md md:max-w-full object-contain aspect-auto" />
+              <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-xs md:max-w-sm object-contain aspect-auto" />
             </div>
           )}
 
@@ -48,7 +48,7 @@ export default function Education() {
 
           {section.reverse && (
             <div className="flex-1 flex justify-center items-center">
-              <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-md md:max-w-full object-contain aspect-auto" />
+              <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-xs md:max-w-sm object-contain aspect-auto" />
             </div>
           )}
         </div>

@@ -7,77 +7,77 @@ import InstagramLogo from '../assets/logos/InstagramLogo.svg';
 
 export default function Footer() {
   return (
-    <div className="justify-center items-center self-stretch bg-slate-100 flex w-full flex-col px-28 py-12 max-md:max-w-full max-md:px-5 overflow-hidden">
-      <div className="flex w-full flex-col items-stretch mt-6 max-md:max-w-full">
+    <div className="flex flex-col w-full bg-slate-100 px-5 md:px-28 py-12 overflow-hidden">
+      <div className="flex flex-col w-full gap-10">
         {/* Newsletter form */}
-        <div className="justify-between grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-          <div className="text-blue-950 text-2xl font-bold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">Segueix la nostra newsletter i estigues al dia de l'oferta de cursos disponibles</div>
-          <div className="w-full justify-end ">
-            <form className="flex items-center">
-              <div className="relative w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full items-center">
+          <div className="text-blue-950 text-2xl font-bold leading-7">Segueix la nostra newsletter i estigues al dia de l'oferta de cursos disponibles</div>
+          <div className="w-full">
+            <form className="flex flex-col sm:flex-row w-full gap-2 sm:gap-0">
+              <div className="relative flex-1">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <EnvelopeIcon className="justify-center text-gray-500 aspect-square object-contain object-center w-4 overflow-hidden shrink-0 max-w-full" />
+                  <EnvelopeIcon className="text-gray-500 w-4 h-4" />
                 </div>
-                <input type="email" id="email" className="flex text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:border-slate-600 focus:outline-none  appearance-none  w-full text-sm py-3 px-4 pl-10 p-2.5" placeholder="Introdueix el teu correu" required />
+                <input type="email" id="email" placeholder="Introdueix el teu correu" required className="w-full py-3 pl-10 pr-4 text-sm text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:border-slate-600" />
               </div>
-              <button type="submit" className=" w-2/4 justify-stretch py-3 px-5  text-sm font-medium text-center text-white cursor-pointer bg-pink-600 border border-gray-300 rounded-none rounded-r-lg   ">
+              <button type="submit" className="py-3 px-5 text-sm font-medium text-white bg-pink-600 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-pink-700 transition-all">
                 Subscriu-m'hi
               </button>
             </form>
           </div>
         </div>
-        <div className="justify-between items-stretch flex w-full gap-5 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
-          <div className="items-start flex flex-col gap-8 px-1 pr-20">
-            <div className="flex gap-5">
-              <div className="self-stretch">
-                <img src={ciberLogo} className="logo" alt="Cibernarium logo" />
-              </div>
-              <div>
-                <img src={bcnActivaLogo} className="logo" alt="Barcelona Activa logo" />
-              </div>
+
+        {/* Logos i informació */}
+        <div className="flex flex-col md:flex-row justify-between w-full gap-10 mt-10">
+          <div className="flex flex-col gap-6 md:gap-8 flex-1">
+            <div className="flex gap-5 items-center">
+              <img src={ciberLogo} className="h-10" alt="Cibernarium logo" />
+              <img src={bcnActivaLogo} className="h-10" alt="Barcelona Activa logo" />
             </div>
-            <div className="text-slate-600 text-sm self-stretch">Cibernàrium és una xarxa de centres de Barcelona on s'imparteix formació tecnològica de tots els nivells.</div>
-            <div className="items-stretch self-stretch flex gap-4 pr-20 max-md:pr-5">
-              <img src={TwitterLogo} className="logo" alt="Twitter logo" />
-              <img src={FacebookLogo} className="logo" alt="Facebook logo" />
-              <img src={InstagramLogo} className="logo" alt="Instagram logo" />
+            <div className="text-slate-600 text-sm">Cibernàrium és una xarxa de centres de Barcelona on s'imparteix formació tecnològica de tots els nivells.</div>
+            <div className="flex gap-4">
+              <img src={TwitterLogo} className="h-6 w-6" alt="Twitter logo" />
+              <img src={FacebookLogo} className="h-6 w-6" alt="Facebook logo" />
+              <img src={InstagramLogo} className="h-6 w-6" alt="Instagram logo" />
             </div>
           </div>
-          <div className="self-start max-md:max-w-full">
-            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch w-[26%] max-md:w-full max-md:ml-0">
-                <div className="items-stretch flex grow flex-col max-md:mt-10">
-                  <div className="text-blue-950 text-sm font-bold leading-5 whitespace-nowrap">Cibernàrium</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Cursos</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Centres</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Instructors</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">FAQ</div>
-                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Normes d'inscripció</div>
-                </div>
-              </div>
-              <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
-                <div className="items-stretch flex grow flex-col max-md:mt-10">
-                  <div className="text-blue-950 text-sm font-bold leading-5 whitespace-nowrap">Termes i condicions</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Avís legal</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Privacitat</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Configuració de cookies</div> <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Sitemap</div>
-                  <div className="text-slate-600 text-sm font-medium leading-5 whitespace-nowrap mt-4">Declaració d'accessibilitat</div>
-                </div>
-              </div>
-              <div className="flex flex-col items-stretch w-2/5 ml-5 max-md:w-full max-md:ml-0">
-                <div className="items-stretch flex flex-col max-md:mt-10">
-                  <div className="text-blue-950 text-sm font-bold leading-5 whitespace-nowrap">Contacte</div>
 
-                  <span className="items-center flex justify-between gap-4 mt-4">
-                    <EnvelopeIcon className=" text-slate-600 aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full" />
-                    <div className="text-slate-600 text-sm font-medium leading-5 self-stretch grow whitespace-nowrap">info@cibernarium.cat</div>
-                  </span>
-
-                  <span className="items-center flex justify-between gap-4 mt-4">
-                    <PhoneIcon className=" text-slate-600 aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full" />
-                    <div className="text-slate-600 text-sm font-medium leading-5 self-stretch grow whitespace-nowrap">900 533 175</div>
-                  </span>
-                  <div className="text-pink-600 text-xs leading-5 whitespace-nowrap mt-1">De dilluns a divendres de 9 a 18h</div>
-                </div>
+          {/* Menú de links */}
+          <div className="flex flex-1 flex-col md:flex-row gap-5">
+            <div className="flex flex-col gap-4 flex-1">
+              <div className="text-blue-950 text-sm font-bold">Cibernàrium</div>
+              <div className="text-slate-600 text-sm">Cursos</div>
+              <div className="text-slate-600 text-sm">Centres</div>
+              <div className="text-slate-600 text-sm">Instructors</div>
+              <div className="text-slate-600 text-sm">FAQ</div>
+              <div className="text-slate-600 text-sm">Normes d'inscripció</div>
+            </div>
+            <div className="flex flex-col gap-4 flex-1">
+              <div className="text-blue-950 text-sm font-bold">Termes i condicions</div>
+              <div className="text-slate-600 text-sm">Avís legal</div>
+              <div className="text-slate-600 text-sm">Privacitat</div>
+              <div className="text-slate-600 text-sm">Configuració de cookies</div>
+              <div className="text-slate-600 text-sm">Sitemap</div>
+              <div className="text-slate-600 text-sm">Declaració d'accessibilitat</div>
+            </div>
+            <div className="flex flex-col gap-4 flex-1">
+              <div className="text-blue-950 text-sm font-bold">Contacte</div>
+              <div className="flex items-center gap-2">
+                <EnvelopeIcon className="text-slate-600 w-5 h-5" />
+                <span className="text-slate-600 text-sm">info@cibernarium.cat</span>
               </div>
+              <div className="flex items-center gap-2">
+                <PhoneIcon className="text-slate-600 w-5 h-5" />
+                <span className="text-slate-600 text-sm">900 533 175</span>
+              </div>
+              <div className="text-pink-600 text-xs mt-1">De dilluns a divendres de 9 a 18h</div>
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 shrink-0 h-px mt-16 max-md:max-w-full max-md:mt-10" />
-        <div className="text-gray-700 text-sm font-medium leading-5 mt-10 max-md:max-w-full">© 2024 Barcelona Activa</div>
+
+        {/* Separador i copyright */}
+        <div className="bg-gray-200 h-px w-full mt-16" />
+        <div className="text-gray-700 text-sm font-medium mt-6">© 2024 Barcelona Activa</div>
       </div>
     </div>
   );

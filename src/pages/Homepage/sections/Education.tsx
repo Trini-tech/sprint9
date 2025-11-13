@@ -34,27 +34,23 @@ export default function Education() {
     <div className="flex flex-col w-full items-center gap-10">
       {sections.map((section, idx) => (
         <div key={section.title} className={`flex flex-col md:flex-row w-full max-w-[1176px] items-center justify-center bg-white py-12 px-5 md:px-16 gap-6 md:gap-8`}>
-          {/* Imatge */}
-          <div className={`flex justify-center items-center w-full md:flex-1 ${idx === 0 ? section.mobileMaxWidth : 'max-w-xs md:max-w-sm'}`}>
-            <img loading="lazy" src={section.img} alt={section.title} className="w-full object-contain aspect-auto" />
-          </div>
-
-          {/* Textos i botó */}
-          <div className="flex flex-col justify-center items-start gap-4 md:gap-6 text-left w-full md:flex-1">
-            <h3 className="text-blue-950 text-xl md:text-2xl font-bold">{section.title}</h3>
-            {section.extraText && <div className="text-pink-600 text-2xl md:text-3xl leading-8">{section.extraText}</div>}
-            <div className="text-gray-500 text-lg leading-8">{section.description}</div>
-            <Link to="/cursos">
-              <ButtonArrow>{section.buttonText}</ButtonArrow>
-            </Link>
-          </div>
-
-          {/* Reverses per escriptori */}
-          {section.reverse && (
-            <div className="hidden md:flex md:flex-1 justify-center items-center">
-              <img loading="lazy" src={section.img} alt={section.title} className="w-full max-w-sm object-contain aspect-auto" />
+          {/* Imatge i text amb revers si cal a escriptori */}
+          <div className={`flex flex-col md:flex-row items-center w-full md:justify-between gap-6 md:gap-8 ${section.reverse ? 'md:flex-row-reverse' : ''}`}>
+            {/* Imatge */}
+            <div className={`flex justify-center items-center w-full md:flex-1 ${idx === 0 ? section.mobileMaxWidth : 'max-w-xs md:max-w-sm'}`}>
+              <img loading="lazy" src={section.img} alt={section.title} className="w-full object-contain aspect-auto" />
             </div>
-          )}
+
+            {/* Texts i botó */}
+            <div className="flex-1 flex flex-col justify-center items-start gap-4 md:gap-6 text-left w-full">
+              <h3 className="text-blue-950 text-xl md:text-2xl font-bold">{section.title}</h3>
+              {section.extraText && <div className="text-pink-600 text-2xl md:text-3xl leading-8">{section.extraText}</div>}
+              <div className="text-gray-500 text-lg leading-8">{section.description}</div>
+              <Link to="/cursos">
+                <ButtonArrow>{section.buttonText}</ButtonArrow>
+              </Link>
+            </div>
+          </div>
         </div>
       ))}
     </div>

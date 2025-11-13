@@ -10,6 +10,7 @@ export default function Education() {
       buttonText: 'Veure els cursos',
       reverse: false,
       mobileMaxWidth: 'max-w-[200px]',
+      desktopMaxWidth: 'md:max-w-md',
     },
     {
       title: 'Formació especialitzada',

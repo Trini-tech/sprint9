@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "image": "/images/courses/javascript.jpg",
+    "location": "Barcelona",
+    "modality": "Presencial",
+    "title": "Introducció a JavaScript",
+    "description": "Aprèn les bases de la programació amb JavaScript i crea els teus primers projectes web.",
+    "level": "Bàsic",
+    "schedule": "Dilluns i dimecres, 18:00 - 20:00",
+    "sessions": "8 sessions",
+    "availability": true,
+    "category": "Programació"
+  },
+  {
+    "id": 2,
+    "image": "/images/courses/react.jpg",
+    "location": "Online",
+    "modality": "Virtual",
+    "title": "React avançat",
+    "description": "Domina React, hooks i patrons avançats per desenvolupar aplicacions modernes.",
+    "level": "Avançat",
+    "schedule": "Dimarts i dijous, 19:00 - 21:00",
+    "sessions": "10 sessions",
+    "availability": false,
+    "category": "Desenvolupament web"
+  }
+]

@@ -1,7 +1,6 @@
-import { supabase } from './supabase.ts';
+import courses from '../data/courses.json';
 import { CourseProps } from '../types/types.tsx';
 
-export const getCourses = async () => {
-  const { data }: { data: CourseProps[] | null } = await supabase.from('courses').select(`*`);
-  return [data];
+export const getCourses = async (): Promise<[CourseProps[]]> => {
+  return [courses as CourseProps[]];
 };

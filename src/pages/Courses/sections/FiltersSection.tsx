@@ -37,7 +37,7 @@ export default function FiltersSection({ courseFilters }: { courseFilters: Filte
                     <span className="flex w-full justify-start rounded-lg text-left text-base font-bold text-blue-950 ">{coursefilter.title}</span>
                     <ChevronDownIcon className={`${open ? 'rotate-180 transform' : ''} h-[20px] w-[20px] rounded-lg text-blue-950 font-bold`} />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="pb-2 text-base text-zinc-800">
+                  <Disclosure.Panel className="pb-2 text-base text-zinc-800 w-full">
                     <ul className="w-48 text-sm">
                       {coursefilter.types.map((type) => (
                         <li key={type} className="w-full">

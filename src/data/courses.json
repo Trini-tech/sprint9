@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "/img/courses/javascript.jpg",
-    "location": "Barcelona",
+    "location": "Cibernàrium 22@",
     "modality": "Presencial",
     "title": "Introducció a JavaScript",
     "description": "Aprèn les bases de la programació amb JavaScript i crea els teus primers projectes web.",
@@ -15,11 +15,11 @@
   {
     "id": 2,
     "image": "/img/courses/react.jpg",
-    "location": "Online",
-    "modality": "Virtual",
+    "location": "Remot",
+    "modality": "Online (en directe)",
     "title": "React avançat",
     "description": "Domina React, hooks i patrons avançats per desenvolupar aplicacions modernes.",
-    "level": "Avançat",
+    "level": "IT Academy",
     "schedule": "Dimarts i dijous, 19:00 - 21:00",
     "sessions": "10 sessions",
     "availability": false,
@@ -28,8 +28,8 @@
   {
     "id": 3,
     "image": "/img/courses/python.jpg",
-    "location": "Barcelona",
-    "modality": "Presencial",
+    "location": "Remot",
+    "modality": "(en directe)",
     "title": "Python per a principiants",
     "description": "Aprèn Python des de zero i crea els teus primers programes.",
     "level": "Bàsic",
@@ -41,11 +41,11 @@
   {
     "id": 4,
     "image": "/img/courses/datascience.jpg",
-    "location": "Online",
-    "modality": "Virtual",
+    "location": "Remot",
+    "modality": "Online (en vídeo)",
     "title": "Introducció a Data Science",
     "description": "Aprèn a processar i analitzar dades amb Python i eines de data science.",
-    "level": "Mitjà",
+    "level": "Especialitzat",
     "schedule": "Dimarts i dijous, 18:00 - 20:00",
     "sessions": "10 sessions",
     "availability": true,
@@ -54,7 +54,7 @@
   {
     "id": 5,
     "image": "/img/courses/uxui.jpg",
-    "location": "València",
+    "location": "Cibernàrium 22@",
     "modality": "Presencial",
     "title": "Disseny UI/UX",
     "description": "Descobreix les bases del disseny d’interfícies i experiència d’usuari.",
@@ -62,6 +62,6 @@
     "schedule": "Dimecres i divendres, 16:00 - 18:00",
     "sessions": "6 sessions",
     "availability": false,
-    "category": "Disseny"
+    "category": "UX/UI"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/courses/javascript.jpg",
+    "image": "/img/courses/javascript.jpg",
     "location": "Barcelona",
     "modality": "Presencial",
     "title": "Introducció a JavaScript",
@@ -24,5 +24,44 @@
     "sessions": "10 sessions",
     "availability": false,
     "category": "Desenvolupament web"
+  },
+  {
+    "id": 3,
+    "image": "/img/courses/python.jpg",
+    "location": "Barcelona",
+    "modality": "Presencial",
+    "title": "Python per a principiants",
+    "description": "Aprèn Python des de zero i crea els teus primers programes.",
+    "level": "Bàsic",
+    "schedule": "Dilluns i dimecres, 17:00 - 19:00",
+    "sessions": "8 sessions",
+    "availability": true,
+    "category": "Programació"
+  },
+  {
+    "id": 4,
+    "image": "/img/courses/data_science.jpg",
+    "location": "Online",
+    "modality": "Virtual",
+    "title": "Introducció a Data Science",
+    "description": "Aprèn a processar i analitzar dades amb Python i eines de data science.",
+    "level": "Mitjà",
+    "schedule": "Dimarts i dijous, 18:00 - 20:00",
+    "sessions": "10 sessions",
+    "availability": true,
+    "category": "Data Science"
+  },
+  {
+    "id": 5,
+    "image": "/img/courses/ui_ux.jpg",
+    "location": "València",
+    "modality": "Presencial",
+    "title": "Disseny UI/UX",
+    "description": "Descobreix les bases del disseny d’interfícies i experiència d’usuari.",
+    "level": "Bàsic",
+    "schedule": "Dimecres i divendres, 16:00 - 18:00",
+    "sessions": "6 sessions",
+    "availability": false,
+    "category": "Disseny"
   }
 ]

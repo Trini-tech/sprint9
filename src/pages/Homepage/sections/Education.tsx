@@ -10,7 +10,7 @@ export default function Education() {
       buttonText: 'Veure els cursos',
       reverse: false,
       mobileMaxWidth: 'max-w-[200px]',
-      desktopMaxWidth: 'md:max-w-md',
+      desktopWidth: 'md:w-[500px]', // make first image bigger on desktop
     },
     {
       title: 'Formació especialitzada',
@@ -19,6 +19,7 @@ export default function Education() {
       buttonText: 'Veure els cursos',
       reverse: true,
       mobileMaxWidth: 'max-w-xs',
+      desktopWidth: 'md:w-[400px]',
     },
     {
       title: 'IT Academy',
@@ -28,21 +29,22 @@ export default function Education() {
       buttonText: 'Veure els cursos',
       reverse: false,
       mobileMaxWidth: 'max-w-xs',
+      desktopWidth: 'md:w-[400px]',
     },
   ];
 
   return (
     <div className="flex flex-col w-full items-center gap-10">
-      {sections.map((section, idx) => (
+      {sections.map((section) => (
         <div key={section.title} className={`flex flex-col md:flex-row w-full max-w-[1176px] items-center justify-center bg-white py-12 px-5 md:px-16 gap-6 md:gap-8`}>
-          {/* Imatge i text amb revers si cal a escriptori */}
+          {/* Container with reverse on desktop */}
           <div className={`flex flex-col md:flex-row items-center w-full md:justify-between gap-6 md:gap-8 ${section.reverse ? 'md:flex-row-reverse' : ''}`}>
-            {/* Imatge */}
-            <div className={`flex justify-center items-center w-full md:flex-1 ${idx === 0 ? section.mobileMaxWidth : 'max-w-xs md:max-w-sm'}`}>
-              <img loading="lazy" src={section.img} alt={section.title} className="w-full object-contain aspect-auto" />
+            {/* Image */}
+            <div className={`flex justify-center items-center w-full md:flex-none ${section.mobileMaxWidth} ${section.desktopWidth}`}>
+              <img loading="lazy" src={section.img} alt={section.title} className="w-full md:w-full object-contain aspect-auto" />
             </div>
 
-            {/* Texts i botó */}
+            {/* Text and button */}
             <div className="flex-1 flex flex-col justify-center items-start gap-4 md:gap-6 text-left w-full">
               <h3 className="text-blue-950 text-xl md:text-2xl font-bold">{section.title}</h3>
               {section.extraText && <div className="text-pink-600 text-2xl md:text-3xl leading-8">{section.extraText}</div>}

@@ -18,9 +18,9 @@ export default function Footer() {
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                   <EnvelopeIcon className="text-gray-500 w-4 h-4" />
                 </div>
-                <input type="email" id="email" placeholder="Introdueix el teu correu" required className="w-full py-3 pl-10 pr-4 text-sm text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:border-slate-600" />
+                <input type="email" id="email" placeholder="Introdueix el teu correu" required className="w-full py-3 pl-10 pr-4 text-sm text-gray-900 border border-gray-300 sm:rounded-l-lg sm:rounded-r-none rounded-lg focus:outline-none focus:border-slate-600" />
               </div>
-              <button type="submit" className="py-3 px-5 text-sm font-medium text-white bg-pink-600 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-pink-700 transition-all">
+              <button type="submit" className="py-3 px-5 text-sm font-medium text-white bg-pink-600 border border-gray-300 sm:rounded-l-none sm:rounded-r-lg rounded-lg hover:bg-pink-700 transition-all">
                 Subscriu-m'hi
               </button>
             </form>
@@ -31,14 +31,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between w-full gap-10 mt-10">
           <div className="flex flex-col gap-6 md:gap-8 flex-1">
             <div className="flex gap-5 items-center">
-              <img src={ciberLogo} className="h-10" alt="Cibernarium logo" />
-              <img src={bcnActivaLogo} className="h-10" alt="Barcelona Activa logo" />
+              <img src={ciberLogo} className="h-8 w-auto" alt="Cibernarium logo" />
+              <img src={bcnActivaLogo} className="h-8 w-auto" alt="Barcelona Activa logo" />
             </div>
             <div className="text-slate-600 text-sm">Cibernàrium és una xarxa de centres de Barcelona on s'imparteix formació tecnològica de tots els nivells.</div>
             <div className="flex gap-4">
-              <img src={TwitterLogo} className="h-6 w-6" alt="Twitter logo" />
-              <img src={FacebookLogo} className="h-6 w-6" alt="Facebook logo" />
-              <img src={InstagramLogo} className="h-6 w-6" alt="Instagram logo" />
+              <img src={TwitterLogo} className="h-5 w-auto" alt="Twitter logo" />
+              <img src={FacebookLogo} className="h-5 w-auto" alt="Facebook logo" />
+              <img src={InstagramLogo} className="h-5 w-auto" alt="Instagram logo" />
             </div>
           </div>
 
